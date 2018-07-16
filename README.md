@@ -4,6 +4,6 @@ Code Assignments for [course](https://www.coursera.org/learn/machine-learning/di
 
 ```
 % ====================== YOUR CODE HERE ======================
-% My code is in this block. Rest of the code/material comes with assignments
+% My code will be in this block. Rest of the code/material comes with assignments
 % =========================================================================
 ```
