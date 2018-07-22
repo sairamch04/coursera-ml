@@ -21,6 +21,15 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+ for i = 1:size(X,1) % for each example
+    minCentroid = [];
+    for j = 1:size(centroids, 1) % for each centroid
+        dist = norm(X(i,:) - centroids(j, :));
+        minCentroid = [minCentroid ; dist];
+    endfor
+    % get nearest cluster
+    [minVal idx(i)] = min(minCentroid); 
+endfor
 
 
 

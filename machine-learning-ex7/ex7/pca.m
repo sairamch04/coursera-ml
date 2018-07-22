@@ -21,8 +21,11 @@ S = zeros(n);
 %
 
 
+% covariance matrix
 
+C = (X' * X) ./ m;
 
+[U, S, V] = svd(C)
 
 
 
