@@ -23,9 +23,12 @@ sigma2 = zeros(n, 1);
 
 
 
+mu = (sum(X) ./ m)';
 
-
-
+for i = 1:n
+    sigma2(i) = sum((X(:,i) .- mu(i)) .** 2) ;
+endfor
+sigma2 = sigma2 ./ m;
 
 
 
